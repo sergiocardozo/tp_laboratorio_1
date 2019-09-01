@@ -1,25 +1,26 @@
 #include <stdio.h>
 
-int pedirSuma (int a, int b){
-	int suma;
+
+int pedirSuma (float a, float b){
+	float suma;
 
 	suma = a + b;
 	return suma;
 }
-int pedirResta (int a, int b){
-	int resta;
+int pedirResta (float a, float b){
+	float resta;
 
 	resta = a - b;
 	return resta;
 }
-int pedirMultiplicar (int a, int b){
-	int multiplicacion;
+int pedirMultiplicar (float a, float b){
+	float multiplicacion;
 
 	multiplicacion = a * b;
 	return multiplicacion;
 }
-int pedirDivision (int a, int b){
-	int division;
+int pedirDivision (float a, float b){
+	float division;
 
 	if (b == 0) {
 		printf("No se puede dividir por cero");
@@ -30,8 +31,8 @@ int pedirDivision (int a, int b){
 		}
 	return division;
 }
-int pedirFactorial (int numero){
-	int factorial = 1;
+int pedirFactorial (float numero){
+	float factorial = 1;
 	int i;
 	for(i=1;i<=numero;i++){
 		factorial = factorial*i;
