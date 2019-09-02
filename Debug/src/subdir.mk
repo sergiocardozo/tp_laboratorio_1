@@ -4,13 +4,16 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
-../src/Trabajopractico1.c 
+../src/Trabajopractico1.c \
+../src/funciones.c 
 
 OBJS += \
-./src/Trabajopractico1.o 
+./src/Trabajopractico1.o \
+./src/funciones.o 
 
 C_DEPS += \
-./src/Trabajopractico1.d 
+./src/Trabajopractico1.d \
+./src/funciones.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes

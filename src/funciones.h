@@ -1,42 +1,49 @@
-#include <stdio.h>
 
+#define FUNCIONES_H_INCLUDED
 
-int pedirSuma (float a, float b){
-	float suma;
-
-	suma = a + b;
-	return suma;
-}
-int pedirResta (float a, float b){
-	float resta;
-
-	resta = a - b;
-	return resta;
-}
-int pedirMultiplicar (float a, float b){
-	float multiplicacion;
-
-	multiplicacion = a * b;
-	return multiplicacion;
-}
-int pedirDivision (float a, float b){
-	float division;
-
-	if (b == 0) {
-		printf("No se puede dividir por cero");
-
-		}
-	else {
-			division = a / b;
-		}
-	return division;
-}
-int pedirFactorial (float numero){
-	float factorial = 1;
-	int i;
-	for(i=1;i<=numero;i++){
-		factorial = factorial*i;
-	}
-	return factorial;
-
-}
+/** \brief Funcion que devuelve la suma entre dos numeros
+ *
+ * \param Pide el primer sumando
+ * \param Pide el segundo sumando
+ * \return Devuelve la suma entre los dos numeros ingresados
+ *
+ */
+float pedirSuma (float, float);
+/** \brief Funcion que devuelve el resto entre dos numeros
+ *
+ * \param Pide el minuendo
+ * \param Pide el sustraendo
+ * \return Devuelve el resto entre los dos numeros ingresados
+ *
+ */
+float pedirResta (float, float);
+/** \brief Funcion que devuelve el producto entre dos numeros
+ *
+ * \param Pide el primer factor
+ * \param Pide el segundo factor
+ * \return Devuelve el producto entre los dos factores
+ *
+ */
+float pedirMultiplicar (float, float);
+/** \brief Funcion que devuelve el cociente entre dos numeros
+ *
+ * \param Pide el dividendo
+ * \param Pide el divisor
+ * \return Devuelve el cociente entre los dos numeros ingresados
+ *
+ */
+float pedirDivision (float, float);
+/** \brief Funcion que devuelve el factorial de una variable numerica
+ *
+ * \param numero int Pide el valor numerico entero
+ * \return int Devuelve el factorial del numero que se ingreso
+ *
+ */
+int pedirFactorial (int);
+/** \brief Pide un numero al usuario y devuelve el resultado
+ *
+ * \param mensaje[] char El mensaje que se le mostrara al usuario
+ * \return float El numero ingresado por el usuario
+ *
+ */
+float getNumero(char mensaje[]);

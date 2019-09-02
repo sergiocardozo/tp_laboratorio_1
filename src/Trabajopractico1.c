@@ -21,10 +21,8 @@ int main()
 	float resta;
 	float division;
 	float multiplicacion;
-	int factorialA;
-	int factorialB;
-	int retornoA = 0;
-	int retornoB = 0;
+	int factorialA = 0;
+	int factorialB = 0;
 
 	do {
 		printf("MENU DE OPCIONES\n");
@@ -39,42 +37,32 @@ int main()
 		scanf("%d",&opciones);
 			switch (opciones) {
 			case 1:
-			printf("\nIngresar primer operando: ");
-			retornoA = 1;
+			a = getNumero("Ingresar primer operando: ");
 			break;
 			case 2:
-			printf("\nIngresar segundo operando: ");
-			retornoB = 1;
+			b = getNumero("Ingresar segundo operando: ");
 			break;
 			case 3:
-				if(retornoA == 1 && retornoB == 1){
-				suma = pedirSuma (a,b);
-				resta = pedirResta (a,b);
-				multiplicacion = pedirMultiplicar (a,b);
-				division = pedirDivision (a,b);
-				factorialA = (int) pedirFactorial (a);
-				factorialB = (int) pedirFactorial (b);
-				}
-				else{
-				printf("No se definio ningun numero");
-				}
+				suma = pedirSuma(a,b);
+				resta = pedirResta(a,b);
+				multiplicacion = pedirMultiplicar(a,b);
+				division = pedirDivision(a,b);
+				factorialA = (int) pedirFactorial(a);
+				factorialB = (int) pedirFactorial(b);
 				break;
-
 			case 4:
-				if(retornoA ==1 && retornoB == 1){
 				printf("El resultado de A+B es: %.2f",suma);
 				printf("\nEl resultado de A-B es: %.2f",resta);
 				printf("\nEl resultado de A/B es: %.2f",division);
 				printf("\nEl resultado de A*B es: %.2f",multiplicacion);
 				printf("\nEl factorial de A es: %d",factorialA);
-				printf("\nEl resultado del factorial B es: %d",factorialB);
-				}
+				printf("\nEl resultado del factorial B es: %d\n",factorialB);
 				break;
 			case 5:
 			printf("Saliendo de la calculadora.");
 			break;
 			default:
-			printf("La opcion ingresada no es correcta.");
+			printf("La opcion ingresada no es correcta.\n");
 			break;
 		}
 
