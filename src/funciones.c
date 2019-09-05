@@ -11,47 +11,53 @@
 #include "funciones.h"
 
 
-float pedirSuma (float a, float b){
+float getSum (float a, float b){
 	float suma;
 
 	suma = a + b;
 	return suma;
 }
-float pedirResta (float a, float b){
+float getSubtraction (float a, float b){
 	float resta;
 
 	resta = a - b;
 	return resta;
 }
-float pedirMultiplicar (float a, float b){
+float getMultiply (float a, float b){
 	float multiplicacion;
 
 	multiplicacion = a * b;
 	return multiplicacion;
 }
-float pedirDivision (float a, float b){
+float getDivide (float a, float b){
 	float division;
 
-	if (b == 0) {
-		printf("No se puede dividir por cero");
-
-
-		}
-	else {
-			division = a / b;
-		}
+	if (b == 0)
+	{
+	}
+	else
+	{
+	division = a / b;
+	}
 	return division;
 }
-int pedirFactorial (int numero){
+int getFactorial (int numero){
 	int factorial = 1;
 	int i;
-	for(i=1;i<=numero;i++){
-		factorial = factorial*i;
+	if(factorial < 0)
+	{
 	}
-	return factorial;
+	else
+	{
+		for(i=1;i<=numero;i++)
+		{
+		factorial = factorial*i;
+		}
 
+	}
+return factorial;
 }
-float pedirNumero(char mensaje[])
+float getNumber(char mensaje[])
 {
     float auxFloat;
     printf("%s", mensaje);

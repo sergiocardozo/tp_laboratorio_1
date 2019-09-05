@@ -1,4 +1,3 @@
-
 #define FUNCIONES_H_INCLUDED
 
 /** \brief Funcion que devuelve la suma entre dos numeros
@@ -8,7 +7,7 @@
  * \return Devuelve la suma entre los dos numeros ingresados
  *
  */
-float pedirSuma (float, float);
+float getSum (float, float);
 /** \brief Funcion que devuelve el resto entre dos numeros
  *
  * \param Pide el minuendo
@@ -16,7 +15,7 @@ float pedirSuma (float, float);
  * \return Devuelve el resto entre los dos numeros ingresados
  *
  */
-float pedirResta (float, float);
+float getSubtraction (float, float);
 /** \brief Funcion que devuelve el producto entre dos numeros
  *
  * \param Pide el primer factor
@@ -24,7 +23,7 @@ float pedirResta (float, float);
  * \return Devuelve el producto entre los dos factores
  *
  */
-float pedirMultiplicar (float, float);
+float getMultiply (float, float);
 /** \brief Funcion que devuelve el cociente entre dos numeros
  *
  * \param Pide el dividendo
@@ -32,18 +31,18 @@ float pedirMultiplicar (float, float);
  * \return Devuelve el cociente entre los dos numeros ingresados
  *
  */
-float pedirDivision (float, float);
+float getDivide (float, float);
 /** \brief Funcion que devuelve el factorial de una variable numerica
  *
  * \param numero int Pide el valor numerico entero
  * \return int Devuelve el factorial del numero que se ingreso
  *
  */
-int pedirFactorial (int);
+int getFactorial (int);
 /** \brief Pide un numero al usuario y devuelve el resultado
  *
  * \param mensaje[] char El mensaje que se le mostrara al usuario
  * \return float El numero ingresado por el usuario
  *
  */
-float getNumero(char mensaje[]);
+float getNumber(char mensaje[]);
