@@ -13,7 +13,7 @@
 #include "funciones.h"
 
 int main()
-{
+{ 
 	float a = 0;
 	float b = 0;
 	int opciones;
