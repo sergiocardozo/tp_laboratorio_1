@@ -1,4 +1,12 @@
-#define FUNCIONES_H_INCLUDED
+/*
+ * funciones.h
+ *
+ *  Created on: 1 sep. 2019
+ *      Author: sergio
+ */
+
+#ifndef FUNCIONES_H_
+#define FUNCIONES_H_
 
 /** \brief Funcion que devuelve la suma entre dos numeros
  *
@@ -46,3 +54,7 @@ int getFactorial (int);
  *
  */
 float getNumber(char mensaje[]);
+
+
+
+#endif /* FUNCIONES_H_ */

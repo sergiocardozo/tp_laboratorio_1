@@ -8,6 +8,7 @@
  ============================================================================
  */
 #include <stdio.h>
+#include <stdlib.h>
 #include "funciones.h"
 
 
@@ -65,3 +66,4 @@ float getNumber(char mensaje[])
 
     return auxFloat;
 }
+
