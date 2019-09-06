@@ -17,8 +17,8 @@
 
 int main()
 {
-float numero1;
-float numero2;
+float numero1 = 0;
+float numero2 = 0;
 int opciones;
 float suma;
 float resta;
@@ -56,7 +56,6 @@ int retornoB = 0;
 				factorialB = getFactorial(numero2);
 				printf("\n Se resolvieron todas las operaciones.\n");
 				}
-
 			break;
 			case 4:
 			printf("El resultado de A+B es: %.2f",suma);
